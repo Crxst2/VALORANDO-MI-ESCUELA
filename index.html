@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valorando mi escuela</title>
+  <h1>VALORANDO MI ESCUELA</h1>
+  <h3>Introducción al proyecto</h3>
+<p>Los alumnos de Colegio de Bachilleres del estado de Veracruz (COBAEV PLANTEL 47) presentaremos una iniciativa dedicada a reconocer y resaltar el increible potencial que reside de nuestra comunidad educativa a través de nuestro proyecto "Valorando mi escuela", donde no solo buscamos fortalecer nuestro sentido de pertenencia, si no también fomentar el respeto mutuo y, en última instancia, construir una escuela aún mejor para todos.</p>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .tab { overflow: hidden; border-bottom: 2px solid #ccc; }
+    .tab button {
+      background-color: inherit; float: left; border: none; outline: none;
+      cursor: pointer; padding: 14px 16px; transition: 0.3s; font-size:16px;
+    }
+    .tab button:hover { background-color: #ddd; }
+    .tab button.active { background-color: #ccc; }
+    .tabcontent {
+      display: none; padding: 20px; border: 1px solid #ccc;
+      border-top: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>UAC´s realizadas</h2>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openMateria(event,'sociales')">Ciencias Sociales III</button>
+    <button class="tablinks" onclick="openMateria(event,'ingles')">Inglés IV</button>
+    <button class="tablinks" onclick="openMateria(event,'literario')">Pensamiento Literario</button>
+    <button class="tablinks" onclick="openMateria(event,'historia')">Conciencia Histórica I</button>
+    <button class="tablinks" onclick="openMateria(event,'matematicas')">Temas Selectos de Matemáticas I</button>
+    <button class="tablinks" onclick="openMateria(event,'química')">Reacciones Químicas</button>
+    <button class="tablinks" onclick="openMateria(event,'sociedad')">Espacio y Sociedad</button>
+  </div>
+
+  <!-- Secciones de contenido -->
+  <div id="sociales" class="tabcontent">
+    <h3>Ciencias Sociales III</h3>
+    <p>Aquí puedes colocar documentos o enlaces sobre problemáticas...</p>
+
+  <div id="ingles" class="tabcontent">
+    <h3>Inglés IV</h3>
+    <p>Contenido específico sobre el idioma inglés...</p>
+
+  <div id="literario" class="tabcontent">
+    <h3>Pensamiento Literario</h3>
+    <p>Documentación, análisis de literatura y problemáticas relevantes...</p>
+
+  <div id="historia" class="tabcontent">
+    <h3>Conciencia Histórica I</h3>
+    <p>Temas históricos, documentos, investigación...</p>
+
+  <div id="matematicas" class="tabcontent">
+    <h3>Temas Selectos de Matemáticas I</h3>
+    <p>Explicaciones, ejemplos y retos matemáticos...</p>
+
+  <div id="química" class="tabcontent">
+    <h3>Reacciones Químicas</h3>
+    <p>Proyectos, laboratorios y experimentos...</p>
+   
+<div id="sociedad"  class="tabcontent">
+    <h3>Espacio y Sociedad</h3>
+    <p> Conciencia ambiental, entorno y cuidado...</p>
+    
+</div>
+
+  <script>
+    function openMateria(evt, materiaName) {
+      // Ocultar todas las pestañas
+      document.querySelectorAll(".tabcontent").forEach(tc => tc.style.display = "none");
+      document.querySelectorAll(".tablinks").forEach(btn => btn.classList.remove("active"));
+      // Mostrar la pestaña seleccionada
+      document.getElementById(materiaName).style.display = "block";
+      evt.currentTarget.classList.add("active");
+    }
+    // Abrir por defecto la primera pestaña
+    document.querySelector(".tablinks").click();
+  </script>
+
+</body>
+</html>
