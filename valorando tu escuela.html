@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>VALORANDO MI ESCUELA</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #649;
+      color: #644;
+    }
+
+    header {
+      background: linear-gradient(135deg, #642eea, #645ba2);
+      color: white;
+      padding: 30px 20px 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      animation: entrada 2s ease-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: #644;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.4s;
+    }
+
+    nav a:hover {
+      background: #555;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .card h2 {
+      font-size: 1.6rem;
+      padding: 20px;
+      background: #649;
+      color: white;
+    }
+
+    .card p {
+      padding: 20px;
+      font-size: 1rem;
+      color: #644;
+    }
+
+    .card a {
+      display: block;
+      padding: 0 20px 20px;
+      color: #642eea;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background: #644;
+      color: white;
+    }
+
+    .marca-agua {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      color: rgba(0, 0, 0, 0.1);
+      font-size: 18px;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        flex: 1 1 100%;
+        text-align: center;
+        border-top: 1px solid #559;
+      }
+
+      .card h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @keyframes entrada {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+<header>
+  <h1>VALORANDO MI ESCUELA</h1>
+  <p>Los alumnos de COBAEV PLANTEL 47 presentan una iniciativa para reconocer el increíble potencial de nuestra comunidad educativa. Con "Valorando mi escuela", buscamos fortalecer el sentido de pertenencia y construir una mejor escuela para todos.</p>
+</header>
+
+<nav>
+  <a href="#literario">Pensamiento Literario</a>
+  <a href="#matematicas">Matemáticas</a>
+  <a href="#ingles">Inglés</a>
+  <a href="#quimica">Química</a>
+  <a href="#historia">Historia</a>
+  <a href="#sociales">Ciencias Sociales</a>
+  <a href="#sociedad">Espacio y Sociedad</a>
+  <a href="#digital">Cultura Digital</a>
+</nav>
+
+<div class="container">
+
+  <div id="literario" class="card">
+    <h2>Pensamiento Literario</h2>
+    <p>Explora nuestra obra de teatro "Hábitos de Verano" escrita por los estudiantes.</p>
+    <a href="https://drive.google.com/file/d/1vkehAnyRw4lgjA0wW2ykMVVsHkMEaLKn/view" target="_blank">Leer aquí</a>
+  </div>
+
+  <div id="matematicas" class="card">
+    <h2>Temas Selectos de Matemáticas I</h2>
+    <p>Estudio sobre Ausentismo escolar y Reprobación.</p>
+    <a href="https://drive.google.com/file/d/1iG5YqLkz2XtiYKDZUohLBOncQVZ_52o8/view" target="_blank">Leer aquí</a>
+  </div>
+
+  <div id="ingles" class="card">
+    <h2>Inglés IV</h2>
+    <p>Álbum sobre logros y retos de los alumnos del COBAEV 47.</p>
+    <a href="https://drive.google.com/file/d/1F-pH788WuTmAWJB8qGUau6bj9mGpc-0V/view" target="_blank">Leer aquí</a>
+  </div>
+
+  <div id="quimica" class="card">
+    <h2>Reacciones Químicas</h2>
+    <p>Importancia de los laboratorios en los planteles escolares.</p>
+    <a href="https://drive.google.com/file/d/1WEa-b2nnRjJd3wNzy1vMJF_8GCy9kKRx/view" target="_blank">Leer aquí</a>
+  </div>
+
+  <div id="historia" class="card">
+    <h2>Conciencia Histórica I</h2>
+    <p>Estudiar el bachillerato: una puerta al conocimiento del México Antiguo.</p>
+    <a href="https://drive.google.com/file/d/1Jbab4e-AsNt3dcfaoQRkAaNRcryPo-eI/view" target="_blank">Leer aquí</a>
+  </div>
+
+  <div id="sociales" class="card">
+    <h2>Ciencias Sociales III</h2>
+    <p>Importancia del bachillerato en la defensa de los Derechos Humanos.</p>
+    <a href="https://drive.google.com/file/d/1dGZ8o_TH2b1i6h57sdcNQ6oNqTaQvtqt/view" target="_blank">Leer aquí</a>
+  </div>
+
+  <div id="sociedad" class="card">
+    <h2>Espacio y Sociedad</h2>
+    <p>Conciencia ambiental y cuidado de nuestro entorno.</p>
+    <a href="https://drive.google.com/file/d/1xAuM6YnGmVWjFuuyYLM9ZnJuc_GoF5yz/view" target="_blank">Leer aquí</a>
+  </div>
+
+  <div id="digital" class="card">
+    <h2>Cultura Digital</h2>
+    <p>La importancia de la higiene personal y el impacto en la salud colectiva.</p>
+    <a href="https://drive.google.com/file/d/1xKnEWG7hae13JRdV0QM_cbCZUxZ4VkYm/view" target="_blank">Leer aquí</a>
+  </div>
+
+</div>
+
+<footer>
+  COBAEV PLANTEL #47 | Derechos reservados a los alumnos del plantel
+</footer>
+
+</body>
+</html>
